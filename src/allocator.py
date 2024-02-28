@@ -7,16 +7,16 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-class AllocatorErrors(Exception):
+
+class AllocatorError(Exception):
     pass
 
 
-class AllocationNotAchievable(AllocatorErrors):
+class AllocationNotAchievable(AllocatorError):
     """
-    May occur when allocation is not "best_effort" and some accounts
+    May occur when allocation is not best effort and some accounts
     are frozen.
     """
-
     pass
 
 
